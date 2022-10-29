@@ -23,11 +23,13 @@ const ProductsList = ({ query }) => {
                 { data.length > 0 && 
                 data.map((product, index) => {
                     return(
-                        <ProductCard image={`http://localhost:4000/images/products/${product.image}`} 
-                        title={product.name} 
-                        description={product.description} 
-                        price={product.price} 
-                        />
+                        <div className="col-sm-6 col-md-3 my-4" key={index}>
+                            <ProductCard image={`http://localhost:4000/images/products/${product.image}`} 
+                            title={product.name} 
+                            description={product.description} 
+                            price={product.price} 
+                            />
+                        </div>
                     );})
                 }
             </div>
@@ -35,8 +37,12 @@ const ProductsList = ({ query }) => {
     }
 
     return(
-        <div className="container">
-            { !data && <LoaderSpinner /> }
+        <div>
+            { !data && 
+                <div className="loader-container">
+                    <LoaderSpinner />
+                </div> 
+            }
             { data && data.length > 0 && 
                 showProducts()
             }

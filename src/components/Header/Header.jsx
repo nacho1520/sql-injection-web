@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import SearchBar from '../SearchBar/SearchBar';
 
 const Header = () => {
   return (
@@ -8,6 +9,9 @@ const Header = () => {
       <div className='logo-container'>
         <i className="fa-solid fa-database"></i>
         <p>SQL INJECTION APP</p>
+      </div>
+      <div className='search-container'>
+        <SearchBar />
       </div>
       <nav className='menu-container'>
         <ul>
@@ -33,6 +37,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className='login-container'>
+        <p>Login</p>
+      </div>
     </div>
   );
 }

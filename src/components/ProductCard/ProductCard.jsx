@@ -1,14 +1,14 @@
 import React from "react";
 import './ProductCard.css';
 
-const ProductCard = props => {
+const ProductCard = ({ image, title, description, price }) => {
     return(
         <div className="product-card">
-            <img src={props.image} />
+            <img src={image} />
             <div className="product-description">
-                <p className="product-title">{props.title}</p>
-                <p className="product-about">{props.description}</p>
-                <p className="product-price">${props.price}</p>
+                <p className="product-title">{title}</p>
+                <p className="product-about">{description}</p>
+                <p className="product-price">${price}</p>
             </div>
         </div>
     );
