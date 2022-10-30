@@ -1,11 +1,10 @@
 import React from "react";
+import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 
 const Main = () => {
     return(
         <div>
-            <h1>
-                Main
-            </h1>
+            <ImageCarousel />
         </div>
     );
 }

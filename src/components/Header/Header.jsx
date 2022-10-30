@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='logo-container'>
-        <i className="fa-solid fa-database"></i>
+        <Link className='logo-link' to='/'>
+          <i className="fa-solid fa-database"></i>
+        </Link>
         <p>SQL INJECTION APP</p>
       </div>
       <div className='search-container'>

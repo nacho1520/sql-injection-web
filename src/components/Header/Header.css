@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.logo-link {
+    color: white;
+}
+
 .fa-database {
     font-size: 36px;
     margin-top: 10px;
