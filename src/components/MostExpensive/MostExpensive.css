@@ -1,0 +1,14 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.expensive-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}

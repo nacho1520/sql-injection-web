@@ -26,8 +26,8 @@ const ImageCarousel = () => {
 
     return(
         <div className="carousel">
-            <button className="forward btn" onClick={handleForward}><i class="fa-solid fa-arrow-right"></i></button>
-            <button className="back btn" onClick={handleBack}><i class="fa-solid fa-arrow-left"></i></button>
+            <button className="forward btn" onClick={handleForward}><i className="fa-solid fa-arrow-right"></i></button>
+            <button className="back btn" onClick={handleBack}><i className="fa-solid fa-arrow-left"></i></button>
             <img src={images[imageIndex]} />
         </div>
     );

@@ -40,7 +40,9 @@ const Header = () => {
         </ul>
       </nav>
       <div className='login-container'>
-        <p>Login</p>
+        <Link className='link' to='/login'>
+          Login
+        </Link>
       </div>
     </div>
   );
